@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: url(zyro-image.png);
+    background-repeat: no-repeat;
+    background-size: 5000px;
+    background-position-x: -500px;
+    background-position-y: -500px;
+    overflow: hidden;
+
+}
+
+img{
+    object-fit: contain;
+    max-height: 120px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 70%, transparent);
+    width: 100%;
+    height: 100vh;
+}
+
+.info{
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 10px 0 12px 0;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    width: 97%;
+    background-color: rgba(0, 0, 0, 0.384);
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    width: 350px;
+    border: 1px solid white;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    transition: all 1s ease 1s;
+
+}
+.containerform{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    width: 350px;
+    border: 1px solid white;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    transition: all 1s ease 1s;
+
+}
+
+.space{
+    margin: 20px 0 20px 0;
+    width: 150px;
+    height: 40px;
+    border-bottom: 1px solid #057edb;
+    border-radius: 7px;
+    outline: none;
+    background-color: rgba(88, 88, 88, 0.459);
+    color: white;
+
+}
+.space::placeholder{
+    color: white;
+}
+
+.space:focus{
+    border: 2px solid #057edb;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.enviar{
+    width: 100px;
+    height: 50px;
+    border: 2px solid #057edb;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.enviar:active{
+    border: 2px solid #057edb;
+    border-radius: 5px;
+    background-color: #057edb;
+}
+
+.enviado{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 350px;
+    border: 1px solid greenyellow;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    transition: all 1s ease 1s;
+}
+
+.fa-circle-check{
+    color: greenyellow;
+}
+
+.title{
+    font-weight: 10px;
+    color: #057edb;
+}
